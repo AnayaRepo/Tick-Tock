@@ -75,7 +75,7 @@ function draw() {
   arc(0, 0, 300, 300, 0, mnAngle);
 
   //hours
-  hrAngle = map(hr, 0, 60, 0, 360);
+  hrAngle = map(hr, 0, 12, 0, 360);
 
   push();
   rotate(hrAngle);
