@@ -19,7 +19,7 @@ function draw() {
     text(hr%12+" PM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
   }
   else if(currentTime===0){
-    text(hr+" AM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
+    text("12 AM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
   }
   else{
     text(hr+" AM: "+mn+" Mins: "+sc+" Secs ", 425, 75)
