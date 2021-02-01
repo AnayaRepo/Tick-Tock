@@ -2,7 +2,7 @@ var hr, mn, sc;
 var scAngle, mnAngle, hrAngle;
 
 function setup() {
-  createCanvas(800,575);
+  createCanvas(800,400);
   createSprite(400, 200, 50, 50);
   
   angleMode(DEGREES);
@@ -12,11 +12,11 @@ function draw() {
   background("black");
 
   //text
-  fill("white");
+  fill("#ffbb00");
   textSize(30);
   currentTime = hour();
   if(currentTime>=12){
-    text(hr+" PM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
+    text(hr%12+" PM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
   }
   else if(currentTime===0){
     text(hr+" AM: "+mn+" Mins: "+sc+" Secs ", 425, 75);
